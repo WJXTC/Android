@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorButton">#6200EE</color>
+    <color name="colorText_white">#fafafa</color>
+    <!--color for piechart-->
+    <color name="pie1">#f06292</color>
+    <color name="pie2">#ba2d65</color>
+    <color name="pie3">#ba68c8</color>
+    <color name="pie4">#65499c</color>
+    <color name="pie5">#2286c3</color>
+</resources>

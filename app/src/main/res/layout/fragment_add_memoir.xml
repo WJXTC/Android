@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/addmm_im_poster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RatingBar
+            android:id="@+id/addmm_rb_rateother"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:numStars="5"
+            style="?android:attr/ratingBarStyleSmall"/>
+        <TextView
+            android:id="@+id/addmm_tv_movie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="movie name"/>
+        <TextView
+            android:id="@+id/addmm_tv_release"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="release date"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/addmm_btn_datepicker"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="select date"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/addmm_tv_datepicker"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="select date"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/addmm_btn_timepicker"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="select time"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/addmm_tv_timepicker"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="select time"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/addmm_sp_cinema"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="select cinema and its postcode"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/addmm_tv_addcinema"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="add new cinema"/>
+            <EditText
+                android:id="@+id/addmm_tv_suburb"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="suburb"/>
+            <Button
+                android:id="@+id/addmm_btn_addcinema"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="add cinema"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/addmm_et_comment"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="add your comment"/>
+        <TextView
+            android:id="@+id/addmm_tv_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RatingBar
+            android:id="@+id/addmm_rb_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/addmm_btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>

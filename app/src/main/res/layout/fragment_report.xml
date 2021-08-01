@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp">
+    <!--a date picker  enter a starting date and an ending date,
+    and a pie chart that will display the total number of movies watched per suburb/postcode
+    (as percentage %) for the selected period. The labels and percentages
+     should be shown on the pie chart. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/report_btn_stdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "start date"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/report_btn_eddate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text = "end date"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/report_btn_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text = "show"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/report_pie"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"/>
+    <Spinner
+        android:id="@+id/report_sp_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:entries="@array/select_year"
+        android:text="select year"/>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/report_bar"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"/>
+</LinearLayout>

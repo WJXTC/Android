@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_login">
+    <!--first name, surname, gender, DoB, address,
+     state, postcode, email and password).-->
+    <TextView
+        android:id="@+id/register_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Register"
+        android:textSize="50sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <EditText
+            android:id="@+id/register_firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="firstname"
+            android:drawableLeft="@drawable/ic_username"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:inputType="textEmailAddress"
+            android:text="fname"/>
+        <EditText
+            android:id="@+id/register_surname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:hint="surname"
+            android:drawableLeft="@drawable/ic_username"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:inputType="textEmailAddress"
+            android:text="lname"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+        <RadioGroup
+            android:id="@+id/register_gender"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/register_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="female"/>
+            <RadioButton android:id="@+id/register_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="male" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/register_btn_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="select DOB"/>
+
+        <TextView
+            android:id="@+id/register_tv_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="05/05/2020"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/register_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="address"
+        android:drawableLeft="@drawable/ic_psw"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:text="add"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+        <EditText
+            android:id="@+id/register_postcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="postcode"
+            android:drawableLeft="@drawable/ic_psw"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:text="3161"/>
+        <TextView
+            android:id="@+id/register_state1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="State"
+            android:layout_marginLeft="60dp"/>
+        <Spinner
+            android:id="@+id/register_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:entries="@array/register_state"/>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="email address"
+        android:drawableLeft="@drawable/ic_psw"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:inputType="textEmailAddress"
+        android:text="test@mail.com"/>
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="password"
+        android:drawableLeft="@drawable/ic_psw"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:inputType="textPassword"
+        android:text="123"/>
+
+    <EditText
+        android:id="@+id/register_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="confirm password"
+        android:drawableLeft="@drawable/ic_psw"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:inputType="textPassword"
+        android:text="123"/>
+
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="register"
+        />
+</LinearLayout>

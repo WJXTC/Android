@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Memoir</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_search">Search Movie</string>
+    <string name="menu_memoir">Memoir</string>
+    <string name="menu_watch">Watch List</string>
+    <string name="menu_report">Report</string>
+    <string name="menu_map">Map</string>
+    <string name="menu_login">login</string>
+
+    <string name="home_second">Home Second</string>
+    <!--home fragment page-->
+    <string name="home_tv_name">movie name</string>
+    <string name="home_tv_score">rate</string>
+    <string name="home_tv_release">release date</string>
+    <!--search page-->
+    <string name="search_btn">Search</string>
+    <string name="search_tv_poster"></string>
+    <!--manifest-->
+    <string name="label_register">Register</string>
+    <string name="label_login">Log in</string>
+    <!--movieview fragment -->
+    <string name="mv_btn_addMemoir">Add to Memoir</string>
+    <string name="mv_btn_addWatchList">Add to Watchlist</string>
+    <!--watchlist fragment-->
+    <string name="wl_btn_delete">Delete</string>
+    <string name="wl_btn_view">View</string>
+    <!--memoir-->
+    <string name="mm_tv_date">date Add</string>
+    <string name="mm_tv_suburb">suburb</string>
+    <string name="mm_tv_comment">comment</string>
+    <string name="mm_tv_score">Star</string>
+    <!-- spinner -->
+    <string-array name="register_state">
+        <item>VIC</item>
+        <item>NSW</item>
+        <item>QLD</item>
+        <item>NA</item>
+        <item>SA</item>
+        <item>NT</item>
+        <item>TAS</item>
+    </string-array>
+    <string-array name="select_year">
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+    </string-array>
+
+    <string-array name="sort_by">
+        <item>default</item>
+        <item>release date</item>
+        <item>watch date</item>
+        <item>rate</item>
+    </string-array>
+    <string-array name="filter_by">
+        <item>Show All</item>
+        <item>Action</item>
+        <item>Adventure</item>
+        <item>Comedy</item>
+        <item>Crime</item>
+        <item>Documentary</item>
+    </string-array>
+
+    <!-- string variable -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

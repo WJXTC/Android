@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_login">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/icon" />
+
+    <EditText
+        android:id="@+id/activity_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="username"
+        android:drawableLeft="@drawable/ic_username"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:inputType="textEmailAddress"
+        android:text = "AngelaLi@gmail.com"/>
+
+    <EditText
+        android:id="@+id/activity_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="password"
+        android:drawableLeft="@drawable/ic_psw"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:inputType="textPassword"
+        android:text = "123"/>
+    <Button
+        android:id="@+id/activity_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="login"
+        />
+
+    <Button
+        android:id="@+id/activity_register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="register"
+        />
+</LinearLayout>
